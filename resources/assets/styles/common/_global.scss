@@ -1,0 +1,61 @@
+html {
+  font-size: $font-size-sr;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font-size: 1.6rem;
+  font-family: $font-choice;
+  color: #4a4a4a;
+  line-height: 1.625;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+.h1 a,
+.h2 a,
+.h3 a,
+.h4 a,
+.h5 a,
+.h6 a {
+  color: inherit;
+  text-decoration: none;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  font-family: "Droid Serif", serif;
+  font-weight: 700;
+  margin: 0 0 gutter;
+
+  @media only screen and (min-width: 750px) {
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+
+  @media only screen and (max-width: 749px) {
+    font-size: 2.2rem;
+  }
+}
+
+.sr_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sr-flex-child {
+  flex-grow: 1;
+}
+
+.page-width {
+  zoom: 1;
+  max-width: 980px;
+  padding: 0 20px;
+  margin: 0 auto;
+}

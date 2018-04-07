@@ -1,3 +1,48 @@
+.banner {
+  background-color: $theme-primary;
+  box-sizing: border-box;
+  min-height: 60px;
+  transition: background-color 0.25s ease-out;
+  width: 100%;
+  z-index: 12;
+}
+
+.site-header-sections {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  min-height: 60px;
+}
+
+.site-header__section--title {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+
+.site-header__logo-wrapper {
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 10px 0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.site-header__logo-image {
+  height: 60px;
+  max-height: 60px;
+}
+
+.menu-text {
+  color: $theme-secondary !important;
+  margin: 0 0 0 0 !important;
+  width: 50px;
+}
+
 .banner .nav li {
   @extend .nav-item;
 }

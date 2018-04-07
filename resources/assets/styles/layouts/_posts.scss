@@ -1,0 +1,21 @@
+// Blog only
+.sr-article {
+  background-color: #fafafa;
+
+  p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.6rem;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: 'Playfair Display', serif;
+    color: #111;
+  }
+
+  a {
+    color: $theme-secondary !important;
+    text-decoration: underline !important;
+  }
+}
