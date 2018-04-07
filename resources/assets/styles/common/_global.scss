@@ -32,14 +32,20 @@ h6 a,
   font-family: "Droid Serif", serif;
   font-weight: 700;
   margin: 0 0 gutter;
+}
 
-  @media only screen and (min-width: 750px) {
+@media only screen and (max-width: 749px) {
+  h4,
+  .h4 {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  h4,
+  .h4 {
     font-size: 2.4rem;
     line-height: 1.5;
-  }
-
-  @media only screen and (max-width: 749px) {
-    font-size: 2.2rem;
   }
 }
 
