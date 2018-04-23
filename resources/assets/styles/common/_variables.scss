@@ -10,3 +10,9 @@ $font-size: 1.6rem;
 $font-color: #4a4a4a;
 
 $spacing-gutter: 20px;
+
+$media-pc: "only screen and (min-width: 990px)";
+$media-tablet: "only screen and (min-width: 750px)";
+
+// Element Selectors
+$headers: "h1, h2, h3, h4, h5, h6";

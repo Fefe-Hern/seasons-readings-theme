@@ -14,40 +14,11 @@ button {
   line-height: 1.625;
 }
 
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a,
-.h1 a,
-.h2 a,
-.h3 a,
-.h4 a,
-.h5 a,
-.h6 a {
-  color: inherit;
-  text-decoration: none;
-  letter-spacing: inherit;
-  text-transform: inherit;
-  font-family: "Droid Serif", serif;
-  font-weight: 700;
-  margin: 0 0 gutter;
-}
-
-@media only screen and (max-width: 749px) {
-  h4,
-  .h4 {
-    font-size: 2.2rem;
-  }
-}
-
-@media only screen and (min-width: 750px) {
-  h4,
-  .h4 {
-    font-size: 2.4rem;
-    line-height: 1.5;
-  }
+.max,
+article {
+  height: 100%;
+  min-height: 100%;
+  overflow: auto;
 }
 
 .sr_flex {

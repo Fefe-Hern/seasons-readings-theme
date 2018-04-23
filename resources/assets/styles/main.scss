@@ -13,6 +13,7 @@
 
 /** Import theme styles */
 @import "common/global";
+@import "common/text";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
@@ -23,3 +24,23 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+
+/** Fonts **/
+@font-face {
+  font-family: 'Playfair Display';
+  src:
+    url('../fonts/Playfair-Display/PlayfairDisplay-Regular.ttf'),
+    url('../fonts/Playfair-Display/PlayfairDisplay-Italic.ttf'),
+    url('../fonts/Playfair-Display/PlayfairDisplay-Bold.ttf'),
+    url('../fonts/Playfair-Display/PlayfairDisplay-Black.ttf'),
+    url('../fonts/Playfair-Display/PlayfairDisplay-BlackItalic.ttf'),
+    url('../fonts/Playfair-Display/PlayfairDisplay-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src:
+    url('../fonts/Libre-Baskerville/LibreBaskerville-Regular.ttf'),
+    url('../fonts/Libre-Baskerville/LibreBaskerville-Italic.ttf'),
+    url('../fonts/Libre-Baskerville/LibreBaskerville-Bold.ttf');
+}
