@@ -103,6 +103,7 @@
     "yargs": "~11.0.0"
   },
   "dependencies": {
+    "blazy": "^1.8.2",
     "bootstrap": "^4.0.0-beta",
     "font-awesome": "~4.7",
     "jquery": "^3.3.1",

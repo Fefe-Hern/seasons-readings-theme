@@ -1,0 +1,24 @@
+.section-header-image-wrapper {
+  height: 278px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+
+  @media #{$media-tablet} {
+    height: 390px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    height: 560px;
+  }
+}
+
+.section-header-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+
+  @media #{$media-tablet} {
+    background-attachment: fixed;
+  }
+}

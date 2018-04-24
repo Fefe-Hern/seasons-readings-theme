@@ -1,3 +1,4 @@
+@include('partials/featured-image')
 <article @php(post_class())>
   <div class="article-wrapper max">
     <div class="sr-post max">
