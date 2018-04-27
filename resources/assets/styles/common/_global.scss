@@ -27,6 +27,10 @@ article {
   align-items: center;
 }
 
+.flex_spaced {
+  justify-content: space-around;
+}
+
 .sr-flex-child {
   flex-grow: 1;
 }
