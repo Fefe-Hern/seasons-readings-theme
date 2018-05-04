@@ -1,6 +1,6 @@
 <div class="sr-card">
   <a href="{{ get_permalink() }}" class="card-wrapper">
-    <div class="card-image-wrapper" style="">
+    <div class="card-image-wrapper" style="padding-top: 60%;">
       <div class="card-preloader"></div>
       <img src="<?=the_post_thumbnail_url(array(450, 0))?>" alt="" class="card-image fade-in" />
     </div>
