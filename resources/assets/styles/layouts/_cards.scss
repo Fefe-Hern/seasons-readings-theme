@@ -1,4 +1,9 @@
+.card-list {
+  flex-direction: row;
+}
+
 .sr-card {
+  align-content: flex-start;
   border-style: none;
   list-style: none;
   width: 100%;

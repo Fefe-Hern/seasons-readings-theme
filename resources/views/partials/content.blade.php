@@ -1,9 +1,11 @@
 <div class="sr-card">
   <a href="{{ get_permalink() }}" class="card-wrapper">
-    <div class="card-image-wrapper" style="padding-top: 60%;">
-      <div class="card-preloader"></div>
-      <img src="<?=the_post_thumbnail_url(array(450, 0))?>" alt="" class="card-image fade-in" />
-    </div>
+    @if (has_post_thumbnail())
+      <div class="card-image-wrapper" style="padding-top: 60%;">
+        <div class="card-preloader"></div>
+        <img src="<?=the_post_thumbnail_url(array(450, 0))?>" alt="" class="card-image fade-in" />
+      </div>
+    @endif
     <div class="card-info">
       <span class="card-date">@include('partials/entry-meta')</span>
       <h3 class="card-title">{{ get_the_title() }}</h2>
