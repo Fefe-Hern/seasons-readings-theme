@@ -19,14 +19,14 @@
       {!! get_search_form(false) !!}
     @endif
 
-
-
     <div class="card-list sr_flex flex_spaced">
       @if($post_query->have_posts() )
-      @while ($post_query->have_posts())
-      @php($post_query->the_post())
+      @for ($i = 0; $i < $post_query->found_posts; $i++)
+      @php
+        $post_query->the_post();
+      @endphp
       @include('partials.content-'.$post_query->get_post_type())
-      @endwhile
+      @endfor
     @endif
       {{--
       @while (have_posts()) @php(the_post())
