@@ -1,6 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+  <?php
+  $args = array(
+      'post_type' => 'post'
+  );
+
+  $post_query = new WP_Query($args);
+  ?>
+
   <div class="page-width">
     @include('partials.page-header')
 
@@ -11,21 +19,15 @@
       {!! get_search_form(false) !!}
     @endif
 
+
+
     <div class="card-list sr_flex flex_spaced">
-      <div class="first-col">
-          @while (have_posts()) @php(the_post())
-          @if (($count % 2) == 0)
-            @include('partials.content-'.get_post_type())
-          @endif
-          @endwhile
-      </div>
-      <div class="second-col">
-          @while (have_posts()) @php(the_post())
-          @if (($count % 2) == 1)
-            @include('partials.content-'.get_post_type())
-          @endif
-          @endwhile
-      </div>
+      @if($post_query->have_posts() )
+      @while ($post_query->have_posts())
+      @php($post_query->the_post())
+      @include('partials.content-'.$post_query->get_post_type())
+      @endwhile
+    @endif
       {{--
       @while (have_posts()) @php(the_post())
       @include('partials.content-'.get_post_type())      
