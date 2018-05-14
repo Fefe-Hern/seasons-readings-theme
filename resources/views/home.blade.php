@@ -21,13 +21,21 @@
 
     <div class="card-list sr_flex flex_spaced">
       @if($post_query->have_posts() )
-      @for ($i = 0; $i < $post_query->found_posts; $i++)
-      @php
-        $post_query->the_post();
-      @endphp
-      @include('partials.content-'.$post_query->get_post_type())
-      @endfor
-    @endif
+        @for ($i = 0; $i < $post_query->found_posts; $i++)
+        @php ($post_query->the_post())
+        @if ($i < $post_query->found_posts / 2)
+          @push('colA')
+            @include('partials.content-'.$post_query->get_post_type())
+          @endpush
+        @else
+          @push('colB')
+            @include('partials.content-'.$post_query->get_post_type())
+          @endpush
+        @endif
+        @endfor
+        <div class="col-a col-md-6">@stack('colA')</div>
+        <div class="col-b col-md-6">@stack('colB')</div>
+      @endif
       {{--
       @while (have_posts()) @php(the_post())
       @include('partials.content-'.get_post_type())      

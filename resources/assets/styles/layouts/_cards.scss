@@ -16,11 +16,9 @@
 
   @media #{$media-tablet} {
     float: left;
-  }
-  */
-  @media #{$media-tablet} {
     max-width: 50%;
   }
+  */
 
   :hover {
     color: inherit !important;
