@@ -1,4 +1,6 @@
-@include('partials/featured-image')
+@if (has_post_thumbnail())
+  @include('partials/featured-image')
+@endif
 <article @php(post_class())>
   <div class="article-wrapper max">
     <div class="sr-post max">
