@@ -75,7 +75,8 @@ article {
     height: 6px;
     margin: 0 0 20px;
     margin-bottom: 20px;
-    background-color: #67cf7a;
+    //background-color: #67cf7a;
+    background-color: $theme-primary;
     transition: width 0.5s ease-out;
   }
 }
